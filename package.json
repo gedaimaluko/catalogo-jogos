@@ -1,0 +1,12 @@
+{
+  "name": "catalogo-api",
+  "version": "1.0.0",
+  "description": "API do Catálogo de Jogos (Soluções para Internet, Aula 15)",
+  "main": "servidor.js",
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

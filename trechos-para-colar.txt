@@ -1,0 +1,31 @@
+TRECHOS DA AULA 15 (copie e cole no api/servidor.js, no lugar indicado)
+=======================================================================
+
+PASSO 3 · dentro do objeto CABECALHO, na linha "// PASSO 3":
+
+  "Access-Control-Allow-Origin": "*",
+
+
+PASSO 4 · dentro do objeto CABECALHO, na linha "// PASSO 4":
+
+  "Access-Control-Allow-Methods": "GET, POST, DELETE",
+  "Access-Control-Allow-Headers": "Content-Type",
+
+
+PASSO 4 · dentro do createServer, na linha "// PASSO 4: cole aqui o bloco do OPTIONS":
+
+  if (req.method === "OPTIONS") {
+    res.writeHead(204, CABECALHO);
+    res.end();
+    return;
+  }
+
+
+PASSO 5 · (segurança) troque o * do Passo 3 pelo endereço da sua página:
+
+  "Access-Control-Allow-Origin": "http://localhost:5500",
+
+  Depois do deploy, use o endereço do GitHub Pages, SEM barra no final e SEM o nome do repositório:
+  "Access-Control-Allow-Origin": "https://SEU-USUARIO.github.io",
+
+LEMBRE: mudou o servidor.js? Ctrl+C no terminal da API e "node servidor.js" de novo.

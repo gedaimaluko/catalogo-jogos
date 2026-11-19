@@ -1,0 +1,23 @@
+KIT DA AULA 15 · DEPLOY, HTTPS E CORS
+=====================================
+
+O que tem aqui
+  api/                 o back-end (a API dos jogos, em Node.js)
+  site/                o front-end (a página: html, css e js)
+  servidor-site.js     liga a página em http://localhost:5500
+  trechos-para-colar.txt  o código dos Passos 3, 4 e 5
+
+Você vai usar DOIS terminais no VS Code (botão + no painel do terminal):
+
+  Terminal 1 (API):     cd api
+                        node servidor.js
+                        -> deixe aberto. Teste: http://localhost:3000/api/jogos
+
+  Terminal 2 (página):  node servidor-site.js       (na pasta kit-aula15)
+                        -> deixe aberto. Abra: http://localhost:5500
+
+Para desligar um servidor: clique no terminal dele e aperte Ctrl+C.
+Mudou o api/servidor.js? Desligue (Ctrl+C) e ligue de novo (node servidor.js).
+
+Precisa do Node.js instalado (qualquer versão 18 ou maior). Confira com: node -v
+O passo a passo completo está nos slides da Aula 15.
