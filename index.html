@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Jogos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <h1>Catálogo de Jogos</h1>
+
+  <!-- Aparece só quando a página não consegue falar com a API -->
+  <p id="aviso" class="aviso" hidden></p>
+
+  <section>
+    <h2>Jogos</h2>
+    <p id="statusJogos" class="status"></p>
+    <div id="listaJogos" class="grade"></div>
+  </section>
+
+  <section>
+    <h2>Adicionar jogo</h2>
+    <form id="formJogo">
+      <input type="text" id="titulo" placeholder="Título" required>
+      <select id="genero">
+        <option>Aventura</option>
+        <option>Plataforma</option>
+        <option>Simulação</option>
+        <option>Ação</option>
+      </select>
+      <input type="number" id="preco" placeholder="Preço" step="0.01" min="0" required>
+      <label><input type="checkbox" id="disponivel" checked> Disponível</label>
+      <button type="submit">Adicionar</button>
+    </form>
+    <p id="statusForm" class="status"></p>
+  </section>
+
+  <!-- A ordem importa: primeiro o endereço da API, depois o código da página -->
+  <script src="js/config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
